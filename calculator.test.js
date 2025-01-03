@@ -22,5 +22,7 @@ test('sum using different delimiters', () => {
     expect(sum(';\n1;2')).toBe(3);
 });
 
-
+test('sum using different delimiters', () => {
+    expect(sum('1-2')).toBe("negative numbers not allowed");
+});
 });
